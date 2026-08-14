@@ -1,0 +1,51 @@
+id_venta,fecha_venta,cliente_nombre,cliente_email,cliente_tipo,ciudad,vendedor,producto,categoria_producto,precio_unitario,cantidad,descuento_pct,metodo_pago,region,total_venta
+V001,03/01/2024,Ana Torres,ana.torres@email.com,Particular,Barranquilla,Carlos Perez,Laptop Lenovo IdeaPad,Computadores,"$2,450,000",1,5%,Tarjeta,Nacional,2.450.000
+V002,05/01/2024,Luis Gómez,luisg@email.com,Empresa,Barranquilla,MARIA LOPEZ,Mouse Logitech G203,Periféricos,$120000,2,0%,Efectivo,Nacional,240000
+V003,09/01/2024,Camila Rojas,camila.rojas@email.com,particular,Cartagena,Carlos Perez,Teclado Redragon K552,PERIFERICOS,"$210,000",1,10 %,tarjeta credito,Caribe,189000
+V004,15/01/2024,Juan Pérez,juan.p@email.com,Empresa,Santa Marta,Andrés Díaz,Monitor Samsung 24,Monitores,$780.000,2,5%,Transferencia,Caribe,1.482.000
+V005,20/01/2024,Sofia Martinez,sofia.m@email.com,Particular,Barranquilla,Maria Lopez,Audífonos Sony WH-CH520,Audio,$280000,1,0,Tarjeta,Nacional,280000
+V006,28/01/2024,Diego Ruiz,diego@email.com,PARTICULAR,Cartagena,Carlos Perez,SSD Kingston 1TB,Almacenamiento,$350.000,2,8%,Tarjeta débito,Caribe,644000
+V007,02/02/2024,Valentina Castro,valentina@email.com,Empresa,Barranquilla,Andres Diaz,Laptop HP 15,Computadores,$2.100.000,1,5%,Transferencia,Nacional,1995000
+V008,07/02/2024,Pedro Silva,pedro.s@email.com,Particular,Montería,Maria Lopez,Webcam Logitech C920,Perifericos,"$420,000",2 ,0%,Efectivo,Costa,420000
+V009,14/02/2024,Laura Mendoza,laura@email.com,Empresa,Cartagena,Carlos Perez,Router TP-Link AX1500,Redes,$310000,3,10%,transferencia,Caribe,837000
+V010,19/02/2024,Andrés Torres,andres@email.com,Particular,Santa Marta,Andrés Díaz,Teclado Mecánico HyperX,Periféricos,$450.000,1,5%,Tarjeta,Caribe,427500
+V011,25/02/2024,Natalia Vega,natalia@email.com,particular,Barranquilla,Maria Lopez,iPhone 13,Celulares,$2.800.000,1,0%,Tarjeta credito,Nacional,2800000
+V012,03/03/2024,Miguel Herrera,,Empresa,Bogota,Carlos Perez,Monitor LG 27,Monitores,"$1,150,000",2,12%,Transferencia,Centro,2024000
+V013,08/03/2024,Paula Sánchez,paula@email.com,Particular,Bogotá,Andres Diaz,SSD Samsung 1TB,Almacenamiento,$390.000,1,5%,Tarjeta,Centro,370500
+V014,16/03/2024,Jorge Castillo,jorge@email.com,Empresa,Barranquilla,Maria Lopez,MacBook Air M1,Computadores,$4.200.000,1,8%,Transferencia,Nacional,3864000
+V015,22/03/2024,Daniela Mora,daniela@email.com,Particular,Cartagena,Carlos Perez,Nintendo Switch OLED,Videojuegos,$1.650.000,1,5%,Tarjeta,Caribe,1567500
+V016,29/03/2024,Felipe Navarro,felipe@email.com,Empresa,Santa Marta,Andrés Díaz,PlayStation 5 Slim,Videojuegos,$2.900.000,1,10%,Transferencia,Caribe,2610000
+V017,04/04/2024,Mariana León,mariana@email.com,Particular,Barranquilla,Maria Lopez,Xbox Series S,Videojuegos,$1.450.000,1,0%,Efectivo,Nacional,1450000
+V018,10/04/2024,Ricardo Peña,ricardo@email.com,EMPRESA,Montería,Carlos Perez,Impresora Epson EcoTank,Impresoras,$980000,2,7%,Transferencia,Costa,1822800
+V019,17/04/2024,Gabriela Ortiz,gabriela@email.com,Particular,Cartagena,Andres Diaz ,AirPods 2,Audio,$620.000,1,5%,Tarjeta débito,Caribe,589000
+V020,24/04/2024,Sebastián Gil,sebastian@email.com,Empresa,Barranquilla,Maria Lopez,SSD Kingston 480GB,Almacenamiento,$220.000,4,10%,Transferencia,Nacional,792000
+V021,01/05/2024,Isabella Cruz,isabella@email.com,Particular,Bogota,Carlos Perez,Samsung Galaxy A55,Celulares,$1.650.000,1,0%,Tarjeta,Centro,1650000
+V022,06/05/2024,Oscar Vargas,oscar@email.com,Empresa,Bogotá,Andres Diaz,Laptop Asus Vivobook,Computadores,$2.750.000,2,5%,Transferencia,Centro,5225000
+V023,13/05/2024,Juliana Ríos,juliana@email.com,Particular,Barranquilla,Maria Lopez,Mouse Logitech MX Master 3,Periféricos,$520000,1,8%,Tarjeta,Nacional,478400
+V024,20/05/2024,Manuel Díaz,manuel@email.com,Empresa,cartagena,Carlos Perez,Monitor Samsung 27,Monitores,$1.050.000,3,10%,transferencia,Caribe,2835000
+V025,27/05/2024,Sara Pineda,sara@email.com,Particular,Santa Marta,Andrés Díaz,Nintendo Switch OLED,Videojuegos,$1.650.000,1,0%,Tarjeta,Caribe,1650000
+V026,03/06/2024,Nicolas Franco,nicolas@email.com,Empresa,Barranquilla,Maria Lopez,Router TP-Link AX3000,Redes,$580.000,2,5%,Transferencia,Nacional,1102000
+V027,09/06/2024,Carolina Mejía,carolina@email.com,Particular,Montería,Carlos Perez,Audífonos JBL Tune 760,Audio,$360.000,1,5%,Efectivo,Costa,342000
+V028,15/06/2024,David Molina,david@email.com,Empresa,Cartagena,Andres Diaz,MacBook Air M2,Computadores,$5.100.000,1,12,Transferencia,Caribe,4488000
+V029,22/06/2024,Alejandra Soto,alejandra@email.com,Particular,Barranquilla,Maria Lopez,iPhone 13,Celulares,$2.800.000,2,5%,Tarjeta credito,Nacional,5320000
+V030,30/06/2024,Tomas Reyes,tomas@email.com,Empresa,Santa Marta,Carlos Perez,Impresora HP Smart Tank,Impresoras,$850.000,2,10%,Transferencia,Caribe,1530000
+V031,05/07/2024,Monica Arias,monica@email.com,Particular,Barranquilla,Andres Diaz,PlayStation 5 Slim,Videojuegos,$2.900.000,1,5%,Tarjeta,Nacional,2755000
+V032,11/07/2024,Esteban Rojas,esteban@email.com,Empresa,Bogotá,Maria Lopez,Monitor LG 27,MONITORES ,$1.150.000,2,8%,Transferencia,Centro,2116000
+V033,18/07/2024,Lina Romero,lina@email.com,Particular,Cartagena,Carlos Perez,Teclado Redragon K552,Perifericos,$210000,2,0%,Tarjeta,Caribe,420000
+V034,25/07/2024,Samuel Vega,samuel@email.com,Empresa,Barranquilla,Andrés Díaz,Laptop Lenovo IdeaPad,Computadores,$2.450.000,1,5%,Transferencia,Nacional,2327500
+V035,31/07/2024,Patricia Gómez,patricia@email.com,Particular,Santa Marta,Maria Lopez,Samsung Galaxy A55,Celulares,$1.650.000,1,10%,Tarjeta débito,Caribe,1485000
+V036,06/08/2024,Kevin Torres,kevin@email.com,Empresa,Cartagena,Carlos Perez,SSD Samsung 1TB,Almacenamiento,$390000,3,5%,Transferencia,Caribe,1111500
+V037,13/08/2024,Rosa Martínez ,rosa@email.com,Particular,Barranquilla,Andres Diaz,AirPods 2,Audio,$620.000,1,0%,Tarjeta,Nacional,620000
+V038,20/08/2024,Luis Gómez,luisg@email.com,Empresa,Barranquilla,Maria Lopez,Mouse Logitech G203,Periféricos,$120.000,5,10%,Transferencia,Nacional,540000
+V039,28/08/2024,Camila Rojas,camila.rojas@email.com,Particular,Cartagena,Carlos Perez,Nintendo Switch OLED,Videojuegos,$1.650.000,1,5%,tarjeta ,Caribe,1567500
+V040,04/09/2024,Juan Pérez,juan.p@email.com,Empresa,Santa Marta,Andrés Díaz,Monitor Samsung 24,Monitores,$780000,4,7%,Transferencia,Caribe,2901600
+V041,12/09/2024,Sofia Martinez,sofia.m@email.com,Particular,Barranquilla,Maria Lopez,Audífonos Sony WH-CH520,Audio,$280.000,2,5%,Tarjeta,Nacional,532000
+V042,19/09/2024,Diego Ruiz,diego@email.com,Particular,Cartagena,Carlos Perez,SSD Kingston 1TB,Almacenamiento,$350000,1,0%,Efectivo,Caribe,350000
+V043,26/09/2024,Valentina Castro,valentina@email.com,Empresa,Barranquilla,Andres Diaz,Laptop HP 15,Computadores,$2.100.000 ,2,8%,Transferencia,Nacional,3864000
+V044,03/10/2024,Pedro Silva,pedro.s@email.com,Particular,Montería,Maria Lopez,Webcam Logitech C920,Periféricos,$420.000,2,5%,Tarjeta,Costa,798000
+V045,10/10/2024,Laura Mendoza,laura@email.com,Empresa,Cartagena,Carlos Perez,Router TP-Link AX1500,Redes,$310.000,4,10%,Transferencia,Caribe,1116000
+V046,18/10/2024,Andrés Torres,andres@email.com,Particular,Santa Marta,Andrés Díaz,Teclado Mecánico HyperX,Periféricos,$450000,2,5%,Tarjeta,Caribe,855000
+V047,25/10/2024,Natalia Vega,natalia@email.com,PARTICULAR ,Barranquilla,Maria Lopez,iPhone 13,Celulares,$2.800.000,1,8%,Tarjeta credito,Nacional,2576000
+V048,02/11/2024,Miguel Herrera,miguel@email.com,Empresa,Bogota,Carlos Perez,Monitor LG 27,Monitores,$1.150.000,3,5%,Transferencia,Centro,3277500
+V049,15/11/2024,Paula Sánchez,paula@email.com,Particular,Bogotá,Andres Diaz,SSD Samsung 1TB,Almacenamiento,$390.000,2,10%,Tarjeta,Centro,702000
+V050,15/11/2024,Paula Sánchez,paula@email.com,Particular,Bogotá,Andres Diaz,SSD Samsung 1TB,Almacenamiento,$390.000,2,10%,Tarjeta,Centro,702000
