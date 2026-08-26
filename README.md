@@ -88,8 +88,15 @@ El modelo analítico implementado en Power BI permite responder a las siguientes
    pip install -r requirements.txt
 ```
 
-4. ****Configurar las variables de entorno:**** Crea un archivo `.env` en la raíz del proyecto con las credenciales de tu base de datos PostgreSQL:Fragmento de código
-   DB\_USER="tu\_usuario"DB\_PASSWORD="tu\_contraseña"DB\_HOST="tu\_host"DB\_PORT=5432DB\_NAME="nombre\_base\_de\_datos"DB\_SSLMODE="require"
+4. ****Configurar las variables de entorno:**** Crea un archivo `.env` en la raíz del proyecto con las credenciales de tu base de datos PostgreSQL:
+```Fragmento de código
+   DB_USER="tu\_usuario"
+   DB_PASSWORD="tu\_contraseña"
+   DB_HOST="tu\_host"
+   DB_PORT=5432
+   DB_NAME="nombre\_base\_de\_datos"
+   DB_SSLMODE="require"
+```
 5. ****Ejecutar el Pipeline ETL:****
 ```Bash 
    python tecnologia.py
