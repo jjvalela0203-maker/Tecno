@@ -68,14 +68,16 @@ El modelo analítico implementado en Power BI permite responder a las siguientes
 
 ## Guía de Instalación y Ejecución
 
-1. ****Clonar el repositorio o descargar el proyecto:****Bash
+1. ****Clonar el repositorio o descargar el proyecto:****
+Bash
 
    git clone
    cd TechData
 2. ****Crear y activar un entorno virtual:****Bash
 
    python -m venv venv\# En Windows:venv\\Scripts\\activate\# En Mac/Linux:source venv/bin/activate
-3. ****Instalar las dependencias:****Bash
+3. ****Instalar las dependencias:***
+Bash
 
    pip install -r requirements.txt
 4. ****Configurar las variables de entorno:**** Crea un archivo `.env` en la raíz del proyecto con las credenciales de tu base de datos PostgreSQL:Fragmento de código
