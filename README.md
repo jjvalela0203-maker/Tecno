@@ -63,7 +63,7 @@ El modelo analítico implementado en Power BI permite responder a las siguientes
 1. - ¿Cuál es la ciudad y región con mayor volumen de ventas asociadas de cierta categoria?
 2. - ¿Como se movieron las ventas en el transcurso de el año registrado?
 3. - ¿Cuáles son las categorías de productos (Computadores, Periféricos, Monitores, etc.) que lideran la rotación y el ingreso total?
-4. - ¿Cuál es el ticket promedio entre clientes `Particulares` y clientes de tipo `Empresa`,  y como se encuentra con respecto al onjetivo de ticket promedio de clientes `Particulares`?
+4. - ¿Cuál es el ticket promedio entre clientes `Particulares` y clientes de tipo `Empresa`,  y como se encuentra con respecto al objetivo de ticket promedio de clientes `Particulares`?
 5. - ¿Qué métodos de pago prefieren los clientes y cómo se alinea esto al objetivo de pagos digitales de la empresa?
 
 ## Guía de Instalación y Ejecución
