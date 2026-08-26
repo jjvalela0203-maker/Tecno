@@ -156,7 +156,7 @@ def construir_modelo_dimensional(df: pd.DataFrame):
         .merge(dim_vendedor, on=["vendedor"])
         .merge(dim_ubicacion, on=["ciudad", "region"])
         [[
-            "id_cliente", "id_producto", "id_vendedor", "id_ubicacion",
+            "id_venta", "id_cliente", "id_producto", "id_vendedor", "id_ubicacion",
             "fecha_venta", "cantidad", "descuento_pct", "metodo_pago", "total_venta",
         ]]
     )
@@ -222,7 +222,7 @@ def main():
         connect_args=connect_args,
     )
     cargar_a_postgres(dim_cliente, dim_producto, dim_vendedor, dim_ubicacion, ft_ventas, engine)
-    cargar_a_postgres(dim_cliente, dim_producto, dim_vendedor, dim_ubicacion, ft_ventas, engine)
+
 
     verificacion = pd.read_sql("SELECT * FROM ft_ventas LIMIT 5", engine)
     if verificacion.empty:
