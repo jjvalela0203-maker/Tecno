@@ -69,25 +69,31 @@ El modelo analítico implementado en Power BI permite responder a las siguientes
 ## Guía de Instalación y Ejecución
 
 1. ****Clonar el repositorio o descargar el proyecto:****
-Bash
 
+```Bash
    git clone
    cd TechData
-2. ****Crear y activar un entorno virtual:****Bash
+```
 
-   python -m venv venv\# En Windows:venv\\Scripts\\activate\# En Mac/Linux:source venv/bin/activate
+2. ****Crear y activar un entorno virtual:****
+
+```Bash
+   python -m venv venv\ # En Windows:venv\\Scripts\\activate\ 
+                        # En Mac/Linux:source venv/bin/activate
+```
+
 3. ****Instalar las dependencias:***
-Bash
 
+```Bash
    pip install -r requirements.txt
-4. ****Configurar las variables de entorno:**** Crea un archivo `.env` en la raíz del proyecto con las credenciales de tu base de datos PostgreSQL:Fragmento de código
+```
 
+4. ****Configurar las variables de entorno:**** Crea un archivo `.env` en la raíz del proyecto con las credenciales de tu base de datos PostgreSQL:Fragmento de código
    DB\_USER="tu\_usuario"DB\_PASSWORD="tu\_contraseña"DB\_HOST="tu\_host"DB\_PORT=5432DB\_NAME="nombre\_base\_de\_datos"DB\_SSLMODE="require"
 5. ****Ejecutar el Pipeline ETL:****
-   Bash
-
+```Bash 
    python tecnologia.py
-
-   __Esto limpiará el dataset crudo, generará el archivo__ _`_dataset_limpio_tienda_tecnologia.csv_`___, construirá el modelo dimensional y poblará automáticamente las tablas relacionales en la base de datos PostgreSQL.__
+```
+Esto limpiará el dataset crudo, generará el archivo__ _`_dataset_limpio_tienda_tecnologia.csv_`___, construirá el modelo dimensional y poblará automáticamente las tablas relacionales en la base de datos PostgreSQL.__
 
 __Desarrollado para TechData — Análisis de Sistemas y Business Intelligence.__
