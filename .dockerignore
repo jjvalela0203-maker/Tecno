@@ -1,0 +1,5 @@
+# Archivos y carpetas que Docker debe ignorar para que la imagen sea más ligera y segura
+__pycache__
+.git
+.env
+*.pbix
