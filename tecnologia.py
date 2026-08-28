@@ -53,11 +53,18 @@ def limpiar_datos(df: pd.DataFrame) -> pd.DataFrame:
 
     # --- Texto libre: nombre y correo ---
     df["cliente_nombre"] = df["cliente_nombre"].astype(str).str.strip()
+    df["cliente_nombre"] = df["cliente_nombre"].replace(["nan", "none", "null"], pd.NA).fillna("NoRegistrado")
     df["cliente_email"] = df["cliente_email"].astype(str).str.strip().str.lower()
     df["cliente_email"] = df["cliente_email"].replace({"nan": pd.NA}).fillna("NoRegistrado")
 
     # --- Categorias simples (sin problema de tildes, solo mayus/minus y espacios) ---
-    df["cliente_tipo"] = normalizar_texto(df["cliente_tipo"])
+    
+    correccion_tipo_cliente = {
+        "PARTICULAR": "Particular",
+        "EMPRESA": "Empresa",
+    }
+    df["cliente_tipo"] = normalizar_texto(df["cliente_tipo"], correccion_tipo_cliente)
+    df["cliente_tipo"] = df["cliente_tipo"].replace(["nan", "none", "null"], pd.NA).fillna("NoRegistrado")
     df["metodo_pago"] = normalizar_texto(df["metodo_pago"])
 
     # --- Categorias con inconsistencia de tildes: se corrigen con diccionario ---
@@ -68,7 +75,6 @@ def limpiar_datos(df: pd.DataFrame) -> pd.DataFrame:
         "CARLOS PEREZ": "Carlos Perez",
     }
     df["vendedor"] = normalizar_texto(df["vendedor"], correccion_vendedor)
-
     correccion_ciudad = {
         "BOGOTA": "Bogotá",
         "CARTAGENA": "Cartagena",
@@ -89,8 +95,39 @@ def limpiar_datos(df: pd.DataFrame) -> pd.DataFrame:
         "VIDEOJUEGOS": "Videojuegos",
         "IMPRESORAS": "Impresoras",
     }
+    
+    diccionario_categorias = {
+        "AirPods 2" : "Audio",
+        "Audífonos JBL Tune 760": "Audio",
+        "Audífonos Sony WH-CH520" : "Audio",
+        "Impresora Epson EcoTank": "Impresoras",
+        "Impresora HP Smart Tank": "Impresoras",
+        "Laptop Asus Vivobook" : "Computadores",
+        "Laptop HP 15": "Computadores",
+        "Laptop Lenovo IdeaPad": "Computadores",
+        "MacBook Air M1": "Computadores",
+        "MacBook Air M2": "Computadores",
+        "Monitor LG 27": "Monitores",
+        "Monitor Samsung 24" : "Monitores",
+        "Monitor Samsung 27" : "Monitores",
+        "Mouse Logitech G203": "Periféricos",
+        "Mouse Logitech MX Master": "Periféricos",
+        "PlayStation 5 Slim" : "Videojuegos",
+        "Nintendo Switch OLED" : "Videojuegos",
+        "Router TP-Link AX3000": "Redes",
+        "SSD Kingston 1TB" : "Almacenamiento",
+        "SSD Kingston 480GB" : "Almacenamiento",
+        "SSD Samsung 1TB" : "Almacenamiento",
+        "Samsung Galaxy A55" : "Celulares",
+        "Teclado Mecánico HyperX": "Periféricos",
+        "Teclado Redragon K552": "Periféricos",
+        "Webcam Logitech C920": "Periféricos",
+        "Xbox Series S": "Videojuegos",
+        "iPhone 13" : "Celulares"
+    }
     df["categoria_producto"] = normalizar_texto(df["categoria_producto"], correccion_categoria)
-
+    df["categoria_producto"] = df["categoria_producto"].replace(diccionario_categorias).fillna("Otros")
+    
     df["producto"] = df["producto"].astype(str).str.strip()
     df["region"] = normalizar_texto(df["region"])
 
@@ -205,8 +242,10 @@ def main():
     print(f"Filas leidas del CSV: {len(df_crudo)}")
 
     df = limpiar_datos(df_crudo)
+    
+    print(df)
 
-    dim_cliente, dim_producto, dim_vendedor, dim_ubicacion, ft_ventas = construir_modelo_dimensional(df)
+    """dim_cliente, dim_producto, dim_vendedor, dim_ubicacion, ft_ventas = construir_modelo_dimensional(df)
     print(f"dim_cliente: {len(dim_cliente)} filas")
     print(f"dim_producto: {len(dim_producto)} filas")
     print(f"dim_vendedor: {len(dim_vendedor)} filas")
@@ -230,7 +269,7 @@ def main():
     else:
         print("Se encontraron registros en la tabla ft_ventas.")
     
-    df.to_csv("dataset_limpio_tienda_tecnologia.csv", index=False)
+    df.to_csv("dataset_limpio_tienda_tecnologia.csv", index=False)"""
 
 
 if __name__ == "__main__":
