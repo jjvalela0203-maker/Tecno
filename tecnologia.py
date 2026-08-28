@@ -1,6 +1,7 @@
 
 import os
 import pandas as pd
+import numpy as np
 from dotenv import load_dotenv
 from sqlalchemy import create_engine, text
 
@@ -114,6 +115,7 @@ def limpiar_datos(df: pd.DataFrame) -> pd.DataFrame:
         "Mouse Logitech MX Master": "Periféricos",
         "PlayStation 5 Slim" : "Videojuegos",
         "Nintendo Switch OLED" : "Videojuegos",
+        "Router TP-Link AX1500": "Redes",
         "Router TP-Link AX3000": "Redes",
         "SSD Kingston 1TB" : "Almacenamiento",
         "SSD Kingston 480GB" : "Almacenamiento",
@@ -126,7 +128,7 @@ def limpiar_datos(df: pd.DataFrame) -> pd.DataFrame:
         "iPhone 13" : "Celulares"
     }
     df["categoria_producto"] = normalizar_texto(df["categoria_producto"], correccion_categoria)
-    df["categoria_producto"] = df["categoria_producto"].replace(diccionario_categorias).fillna("Otros")
+    df["categoria_producto"] = df['producto'].map(diccionario_categorias).fillna(df["categoria_producto"])
     
     df["producto"] = df["producto"].astype(str).str.strip()
     df["region"] = normalizar_texto(df["region"])
@@ -134,20 +136,20 @@ def limpiar_datos(df: pd.DataFrame) -> pd.DataFrame:
     # --- Numeros ---
     df["cantidad"] = df["cantidad"].astype(str).str.strip().astype(int)
 
-    df["descuento_pct"] = (
+    columna_limpia= (
         df["descuento_pct"]
         .astype(str)
         .str.replace("%", "", regex=False)
         .str.strip()
-        .astype(float)
-        / 100
-    )
+        .astype(float))
+    
+    df["descuento_pct"] = np.where(columna_limpia > 1, columna_limpia / 100.0, columna_limpia)
 
     df["precio_unitario"] = quitar_simbolos_dinero(df["precio_unitario"])
     df["total_venta"] = quitar_simbolos_dinero(df["total_venta"])
 
     # --- Fechas: todo el archivo usa dd/mm/aaaa, se fija el formato para evitar ambiguedad ---
-    df["fecha_venta"] = pd.to_datetime(df["fecha_venta"], format="%d/%m/%Y", errors="coerce")
+    df["fecha_venta"] = pd.to_datetime(df["fecha_venta"], format="mixed", errors="coerce")
     fechas_invalidas = df["fecha_venta"].isna().sum()
     if fechas_invalidas:
         print(f"Aviso: {fechas_invalidas} fechas no se pudieron interpretar y quedaron como NaT.")
@@ -242,10 +244,8 @@ def main():
     print(f"Filas leidas del CSV: {len(df_crudo)}")
 
     df = limpiar_datos(df_crudo)
-    
-    print(df)
 
-    """dim_cliente, dim_producto, dim_vendedor, dim_ubicacion, ft_ventas = construir_modelo_dimensional(df)
+    dim_cliente, dim_producto, dim_vendedor, dim_ubicacion, ft_ventas = construir_modelo_dimensional(df)
     print(f"dim_cliente: {len(dim_cliente)} filas")
     print(f"dim_producto: {len(dim_producto)} filas")
     print(f"dim_vendedor: {len(dim_vendedor)} filas")
@@ -269,7 +269,7 @@ def main():
     else:
         print("Se encontraron registros en la tabla ft_ventas.")
     
-    df.to_csv("dataset_limpio_tienda_tecnologia.csv", index=False)"""
+    df.to_csv("dataset_limpio_tienda_tecnologia.csv", index=False)
 
 
 if __name__ == "__main__":
