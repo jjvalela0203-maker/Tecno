@@ -44,13 +44,13 @@ def quitar_simbolos_dinero(serie: pd.Series) -> pd.Series:
 def limpiar_datos(df: pd.DataFrame) -> pd.DataFrame:
     df = df.copy()
 
-    # --- Duplicados exactos de una venta (mismo id se ignora porque siempre es distinto) ---
-    columnas_sin_id = [c for c in df.columns if c != "id_venta"]
-    duplicados = df[df.duplicated(subset=columnas_sin_id, keep="first")]
-    if not duplicados.empty:
-        print(f"Se encontraron {len(duplicados)} posibles ventas duplicadas, se eliminan:")
-        print(duplicados[["id_venta", "cliente_nombre", "fecha_venta"]].to_string(index=False))
-        df = df.drop(index=duplicados.index)
+# --- Duplicados por id_venta: conservar la fila con más información ---
+    df = df.replace(r'^\s*$', pd.NA, regex=True)
+    df["nulos"] = df.isna().sum(axis=1)
+    df = df.sort_values("nulos").drop_duplicates(subset=["id_venta"], keep="first")
+    df = df.drop(columns=["nulos"])
+    df["id_num"] = df["id_venta"].str.extract(r'(\d+)').astype(int)
+    df = df.sort_values(by="id_num").drop(columns=["id_num"]).reset_index(drop=True)
 
     # --- Texto libre: nombre y correo ---
     df["cliente_nombre"] = df["cliente_nombre"].astype(str).str.strip()
@@ -65,7 +65,7 @@ def limpiar_datos(df: pd.DataFrame) -> pd.DataFrame:
         "EMPRESA": "Empresa",
     }
     df["cliente_tipo"] = normalizar_texto(df["cliente_tipo"], correccion_tipo_cliente)
-    df["cliente_tipo"] = df["cliente_tipo"].replace(["nan", "none", "null"], pd.NA).fillna("NoRegistrado")
+    df["cliente_tipo"] = df["cliente_tipo"].replace(["Nan", "None", "Null"], pd.NA).fillna("NoRegistrado")
     df["metodo_pago"] = normalizar_texto(df["metodo_pago"])
 
     # --- Categorias con inconsistencia de tildes: se corrigen con diccionario ---

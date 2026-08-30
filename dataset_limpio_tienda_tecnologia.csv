@@ -37,7 +37,6 @@ V035,2024-04-14,Manuel Díaz,daniela@email.com,Particular,Santa Marta,Andrés D�
 V036,2023-11-12,David Molina,lina@email.com,Particular,Cartagena,Maria Lopez,Samsung Galaxy A55,Celulares,1650000.0,2,0.1,Transferencia,Centro,2970000.0
 V037,2024-10-01,Luis Gómez,natalia@email.com,Empresa,Bogotá,Andrés Díaz,Monitor Samsung 27,Monitores,1050000.0,1,0.5,Tarjeta,Centro,997500.0
 V038,2024-02-10,Tomas Reyes,patricia@email.com,Particular,Bogotá,Maria Lopez,Laptop Asus Vivobook,Computadores,2750000.0,2,0.0,Tarjeta,Costa,5500000.0
-V039,2023-05-23,Luis Gómez,laura@email.com,NoRegistrado,Cartagena,Carlos Perez,Mouse Logitech MX Master 3,Celulares,520000.0,1,0.15,Tarjeta Credito,Costa,442000.0
 V039,2023-05-23,Luis Gómez,laura@email.com,Particular,Cartagena,Carlos Perez,Mouse Logitech MX Master 3,Celulares,520000.0,1,0.15,Tarjeta Credito,Costa,442000.0
 V040,2023-04-16,Ricardo Peña,natalia@email.com,Empresa,Cartagena,Andrés Díaz,Impresora Epson EcoTank,Impresoras,980000.0,2,0.0,Tarjeta,Centro,1960000.0
 V041,2024-06-20,Ana Torres,juan.p@email.com,NoRegistrado,Bogotá,Andrés Díaz,iPhone 13,Celulares,2800000.0,2,0.2,Tarjeta Credito,Nacional,4480000.0
@@ -613,7 +612,7 @@ V610,2023-12-30,Paula Sánchez,juan.p@email.com,Empresa,Montería,Maria Lopez,Im
 V611,2024-01-09,Miguel Herrera,alejandra@email.com,Empresa,Bogotá,Maria Lopez,Laptop HP 15,Computadores,2100000.0,5,0.1,Transferencia,Caribe,9450000.0
 V612,2023-05-12,Samuel Vega,sara@email.com,Empresa,Bogotá,Maria Lopez,Monitor Samsung 24,Monitores,780000.0,1,0.0,Efectivo,Centro,780000.0
 V613,2023-05-17,Esteban Rojas,lina@email.com,Particular,Montería,Andrés Díaz,Mouse Logitech MX Master 3,Periféricos,520000.0,1,0.2,Efectivo,Centro,416000.0
-V614,2024-07-31,NoRegistrado,ana.torres@email.com,Empresa,Santa Marta,Maria Lopez,Mouse Logitech MX Master 3,,520000.0,4,0.2,Tarjeta Credito,Costa,1664000.0
+V614,2024-07-31,NoRegistrado,ana.torres@email.com,Empresa,Santa Marta,Maria Lopez,Mouse Logitech MX Master 3,<Na>,520000.0,4,0.2,Tarjeta Credito,Costa,1664000.0
 V615,2024-07-19,Andrés Torres,pedro.s@email.com,Particular,Cartagena,Maria Lopez,Audífonos Sony WH-CH520,Audio,280000.0,5,0.1,Transferencia,Caribe,1260000.0
 V616,2024-06-07,Kevin Torres,tomas@email.com,Particular,Bogotá,Andrés Díaz,PlayStation 5 Slim,Videojuegos,2900000.0,3,0.15,Efectivo,Centro,7395000.0
 V617,2023-03-26,Camila Rojas,alejandra@email.com,Particular,Bogotá,Andrés Díaz,Nintendo Switch OLED,Videojuegos,1650000.0,3,0.2,Tarjeta,Nacional,3960000.0
@@ -697,7 +696,6 @@ V694,2023-11-09,Patricia Gómez,daniela@email.com,Particular,Barranquilla,André
 V695,2024-01-23,Rosa Martínez,diego@email.com,Particular,Barranquilla,Maria Lopez,Nintendo Switch OLED,Videojuegos,1650000.0,1,0.0,Efectivo,Caribe,1650000.0
 V696,2024-06-03,Isabella Cruz,sebastian@email.com,Particular,Santa Marta,Maria Lopez,Monitor Samsung 24,Monitores,780000.0,1,0.2,Tarjeta,Centro,624000.0
 V697,2023-12-18,Camila Rojas,camila.rojas@email.com,NoRegistrado,Cartagena,Andrés Díaz,Nintendo Switch OLED,Videojuegos,1650000.0,3,0.0,Transferencia,Nacional,4950000.0
-V698,2023-02-22,Natalia Vega,NoRegistrado,Empresa,Santa Marta,Carlos Perez,MacBook Air M1,Computadores,4200000.0,4,0.2,Efectivo,Costa,13440000.0
 V698,2023-02-22,Natalia Vega,pedro.s@email.com,Empresa,Santa Marta,Carlos Perez,MacBook Air M1,Computadores,4200000.0,4,0.2,Efectivo,Costa,13440000.0
 V699,2024-01-01,Luis Gómez,david@email.com,Empresa,Cartagena,Andrés Díaz,Monitor Samsung 27,Monitores,1050000.0,2,0.2,Efectivo,Caribe,1680000.0
 V700,2024-08-23,Gabriela Ortiz,laura@email.com,Particular,Montería,Carlos Perez,PlayStation 5 Slim,Videojuegos,2900000.0,1,0.05,Tarjeta,Caribe,2755000.0
@@ -974,12 +972,10 @@ V970,2024-04-22,Pedro Silva,juliana@email.com,Empresa,Barranquilla,Andrés Díaz
 V971,2023-08-13,Sofia Martinez,laura@email.com,Empresa,Cartagena,Andrés Díaz,Monitor Samsung 27,Monitores,1050000.0,4,0.0,Transferencia,Nacional,4200000.0
 V972,2024-01-15,Nicolas Franco,valentina@email.com,Empresa,Santa Marta,Carlos Perez,iPhone 13,Celulares,2800000.0,1,0.0,Tarjeta Débito,Costa,2800000.0
 V973,2023-04-02,Manuel Díaz,rosa@email.com,Empresa,Montería,Maria Lopez,SSD Samsung 1TB,Almacenamiento,390000.0,4,0.2,Tarjeta Credito,Costa,1248000.0
-V973,2023-04-02,NoRegistrado,rosa@email.com,Empresa,Montería,Maria Lopez,SSD Samsung 1TB,Almacenamiento,390000.0,4,0.2,Tarjeta Credito,Costa,1248000.0
 V974,2024-11-08,Manuel Díaz,ricardo@email.com,Particular,Cartagena,Maria Lopez,Impresora HP Smart Tank,Impresoras,850000.0,1,0.0,Transferencia,Caribe,850000.0
 V975,2024-11-19,Camila Rojas,manuel@email.com,Empresa,Barranquilla,Carlos Perez,Audífonos JBL Tune 760,Audio,360000.0,1,0.0,Tarjeta,Centro,360000.0
 V976,2024-04-25,Tomas Reyes,miguel@email.com,Empresa,Santa Marta,Andrés Díaz,Router TP-Link AX3000,Redes,580000.0,1,0.1,Tarjeta Débito,Caribe,522000.0
 V977,2024-04-13,Valentina Castro,sebastian@email.com,Particular,Cartagena,Andrés Díaz,Webcam Logitech C920,Periféricos,420000.0,4,0.0,Tarjeta Credito,Centro,1680000.0
-V978,2024-10-21,Tomas Reyes,laura@email.com,NoRegistrado,Santa Marta,Andrés Díaz,Laptop HP 15,Computadores,2100000.0,2,0.0,Tarjeta Credito,Costa,4200000.0
 V978,2024-10-21,Tomas Reyes,laura@email.com,Particular,Santa Marta,Andrés Díaz,Laptop HP 15,Computadores,2100000.0,2,0.0,Tarjeta Credito,Costa,4200000.0
 V979,2023-03-08,Laura Mendoza,isabella@email.com,Empresa,Cartagena,Andrés Díaz,Laptop HP 15,Computadores,2100000.0,5,0.15,Efectivo,Centro,8925000.0
 V980,2024-03-09,Camila Rojas,felipe@email.com,Particular,Bogotá,Andrés Díaz,Samsung Galaxy A55,Celulares,1650000.0,2,0.0,Tarjeta Credito,Nacional,3300000.0
