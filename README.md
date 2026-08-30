@@ -38,7 +38,6 @@ TechData/
 ├── dataset_sucio_tienda_tecnologia.csv      # Datos crudos originales con inconsistencias
 ├── dataset_limpio_tienda_tecnologia.csv     # Dataset procesado y normalizado
 ├── tecnologia.py                            # Script ETL principal (Limpieza + Modelo Dimensional + Carga DB)
-├── Tecno.pbix                               # Dashboard analítico en Power BI
 ├── requirements.txt                         # Dependencias del proyecto
 ├── .env                                     # Credenciales de conexión (Omitido en Git)
 ├── .gitignore                               # Archivos excluidos del control de versiones
